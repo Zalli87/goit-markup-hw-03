@@ -35,6 +35,11 @@ ul {
   margin-left: auto;
   margin-right: auto;
 }
+/* main-nav */
+.page-header .main-nav {
+  display: flex;
+  align-items: center;
+}
 /* logo */
 .logo {
   color: var(--prime-text-color);
@@ -48,9 +53,22 @@ ul {
 .logo span {
   color: var(--accent-color);
 }
+
 /* site-nav */
+.site-nav {
+  display: flex;
+  margin-left: 80px;
+}
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
 .site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--prime-text-color);
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -60,6 +78,13 @@ ul {
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
+}
+.contact {
+  display: flex;
+  margin-left: auto;
+}
+.contact .item:not(:last-child) {
+  margin-right: 30px;
 }
 .contact a {
   color: var(--second-text-color);
@@ -162,6 +187,8 @@ ul {
 }
 /* Button */
 button {
+  border-radius: 4px;
+
   background-color: var(--white-color);
   color: var(--prime-text-color);
   font-family: Roboto, sans-serif;
@@ -176,12 +203,19 @@ button:focus {
   color: var(--white-color);
 }
 .button {
+  display: inline-block;
+  min-width: 200px;
+  border-radius: 4px;
+  padding: 10px 32px;
+
   color: var(--white-color);
   background-color: var(--accent-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+  text-align: center;
+  text-decoration: none;
 }
 
 /* Works */
