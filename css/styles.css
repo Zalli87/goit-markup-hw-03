@@ -143,6 +143,12 @@ ul {
 }
 
 /* Advantage */
+.advantage-list {
+  display: flex;
+}
+.advantage-list .item:not(:last-child) {
+  margin-right: 30px;
+}
 .advantage-list .title {
   margin-top: 30px;
   margin-bottom: 10px;
@@ -154,6 +160,16 @@ ul {
   text-transform: uppercase;
 }
 /* Projects */
+.projects-list {
+  display: flex;
+}
+.projects-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+.projects-list img {
+  display: block;
+}
+
 .projects-list a {
   background-color: rgba(47, 48, 58, 0.8);
   color: var(--white-color);
@@ -167,6 +183,13 @@ ul {
 .team {
   background-color: #f5f4fa;
 }
+.team-list {
+  display: flex;
+}
+.team-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .team-list .title {
   margin-top: 30px;
   margin-bottom: 10px;
@@ -184,6 +207,14 @@ ul {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
+}
+/* Client */
+.client {
+  display: flex;
+  justify-content: center;
+}
+.client .item + .item {
+  margin-right: 30px;
 }
 /* Button */
 button {
