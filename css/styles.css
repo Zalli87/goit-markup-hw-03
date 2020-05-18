@@ -36,7 +36,7 @@ ul {
   margin-right: auto;
 }
 /* main-nav */
-.page-header .main-nav {
+.main-nav {
   display: flex;
   align-items: center;
 }
@@ -187,6 +187,9 @@ ul {
 .team {
   background-color: #f5f4fa;
 }
+.team .item {
+  background-color: var(--white-color);
+}
 .team-list {
   display: flex;
 }
@@ -215,6 +218,10 @@ ul {
 .team img {
   display: block;
 }
+.team-social {
+  padding-bottom: 28px;
+}
+
 /* Client */
 .client {
   display: flex;
@@ -338,10 +345,10 @@ button:focus {
 }
 .page-footer {
   background-color: #2f303a;
+  padding-top: 48px;
 }
 .footer-logo {
   display: inline-block;
-  margin-top: 48px;
   margin-bottom: 10px;
 
   color: var(--white-color);
@@ -369,7 +376,9 @@ button:focus {
   margin-bottom: 9px;
 }
 .address > span.tel {
+  display: block;
   color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 28px;
 }
 .page-footer b {
   margin-top: 0;
@@ -389,4 +398,5 @@ button:focus {
   font-size: 12px;
   line-height: 2;
   text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
